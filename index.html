@@ -8,10 +8,9 @@
     <h1>Lemonade Stand Optimization</h1>
 
     <!-- Descriptive Analytics Section -->
-    <div id="analyticsData">
+    <div id="analyticsData" style="text-align:center;">
         <h2>Past Sales Data</h2>
-        <!-- Displaying the table with past sales data -->
-        <table border="1">
+        <table border="1" style="margin:0 auto;">
             <tr>
                 <th>Day</th>
                 <th>Price ($)</th>
@@ -27,16 +26,39 @@
                 <td>3.85</td>
                 <td>66</td>
             </tr>
-            <!-- ... Continue for all 7 days -->
+            <tr>
+                <td>Day 3</td>
+                <td>3.20</td>
+                <td>77</td>
+            </tr>
+            <tr>
+                <td>Day 4</td>
+                <td>2.80</td>
+                <td>65</td>
+            </tr>
+            <tr>
+                <td>Day 5</td>
+                <td>1.47</td>
+                <td>57</td>
+            </tr>
+            <tr>
+                <td>Day 6</td>
+                <td>1.47</td>
+                <td>76</td>
+            </tr>
+            <tr>
+                <td>Day 7</td>
+                <td>1.17</td>
+                <td>59</td>
+            </tr>
         </table>
-        <!-- Displaying the graph image -->
         <img src="https://drive.google.com/uc?id=1kozqas2lSSKGKoE3_XpYuaH2e5_Aabwv" alt="Graphical representation of past sales data">
     </div>
 
     <!-- Predictive Analytics Section -->
     <div id="prediction">
         <h2>Today's Customer Prediction</h2>
-        <p>Based on past data and today's weather, we predict you'll have <span id="predictedCustomers">XXX</span> customers. Adjust your price accordingly!</p>
+        <p>Based on past data and today's weather, we predict you'll have <span id="predictedCustomers">82</span> customers. Adjust your price accordingly!</p>
     </div>
 
     <label for="price">Set Your Lemonade Price ($):</label>
@@ -44,5 +66,17 @@
     <button onclick="calculateProfit()">Calculate Profit</button>
     <p id="result"></p>
     <p id="attempts">Attempts Remaining: 5</p>
+
+    <!-- Table for cumulative profit -->
+    <div id="finalResults" style="display:none;">
+        <h2>Your Cumulative Profits</h2>
+        <table border="1" id="profitTable">
+            <tr>
+                <th>Attempt</th>
+                <th>Profit ($)</th>
+            </tr>
+            <!-- Rows will be populated by the script -->
+        </table>
+    </div>
 </body>
 </html>
