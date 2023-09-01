@@ -34,10 +34,20 @@ function displayFinalResults() {
         let row = table.insertRow(-1);
         let cell1 = row.insertCell(0);
         let cell2 = row.insertCell(1);
+        let cell3 = row.insertCell(2);
         cell1.innerHTML = "Attempt " + (i+1);
-        cell2.innerHTML = "$" + cumulativeProfit.toFixed(2);
+        cell2.innerHTML = "$" + profits[i];
+        cell3.innerHTML = "$" + cumulativeProfit.toFixed(2);
     }
 
+    // Adding a row for the final cumulative profit
+    let row = table.insertRow(-1);
+    let cell1 = row.insertCell(0);
+    let cell2 = row.insertCell(1);
+    let cell3 = row.insertCell(2);
+    cell1.innerHTML = "Total";
+    cell2.innerHTML = "-";
+    cell3.innerHTML = "$" + cumulativeProfit.toFixed(2);
+
     document.getElementById("finalResults").style.display = "block";
-    document.getElementById("result").textContent += " Here's a summary of your profits over the 5 attempts.";
 }
