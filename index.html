@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Lemonade Stand Optimization</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Lemonade Stand Optimization</h1>
+
+    <!-- Descriptive Analytics Section -->
+    <div id="analyticsData">
+        <h2>Past Sales Data</h2>
+        <!-- This can be a graphical representation (e.g., a bar chart) of sales data at different prices -->
+        <p>Here, you'd insert a graphical representation of past sales data.</p>
+    </div>
+
+    <!-- Predictive Analytics Section -->
+    <div id="prediction">
+        <h2>Today's Customer Prediction</h2>
+        <p id="customerPrediction">Based on past data and today's weather, we predict you'll have XXX customers.</p>
+    </div>
+
+    <label for="price">Set Your Lemonade Price ($):</label>
+    <input type="number" id="price" min="0.5" max="5" step="0.1">
+    <button onclick="calculateProfit()">Calculate Profit</button>
+    <p id="result"></p>
+    <p id="attempts">Attempts Remaining: 5</p>
+</body>
+</html>
