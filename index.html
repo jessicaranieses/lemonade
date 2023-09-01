@@ -10,14 +10,33 @@
     <!-- Descriptive Analytics Section -->
     <div id="analyticsData">
         <h2>Past Sales Data</h2>
-        <!-- This can be a graphical representation (e.g., a bar chart) of sales data at different prices -->
-        <p>Here, you'd insert a graphical representation of past sales data.</p>
+        <!-- Displaying the table with past sales data -->
+        <table border="1">
+            <tr>
+                <th>Day</th>
+                <th>Price ($)</th>
+                <th>Customers</th>
+            </tr>
+            <tr>
+                <td>Day 1</td>
+                <td>2.12</td>
+                <td>71</td>
+            </tr>
+            <tr>
+                <td>Day 2</td>
+                <td>3.85</td>
+                <td>66</td>
+            </tr>
+            <!-- ... Continue for all 7 days -->
+        </table>
+        <!-- Displaying the graph image -->
+        <img src="https://drive.google.com/uc?id=1kozqas2lSSKGKoE3_XpYuaH2e5_Aabwv" alt="Graphical representation of past sales data">
     </div>
 
     <!-- Predictive Analytics Section -->
     <div id="prediction">
         <h2>Today's Customer Prediction</h2>
-        <p id="customerPrediction">Based on past data and today's weather, we predict you'll have XXX customers.</p>
+        <p>Based on past data and today's weather, we predict you'll have <span id="predictedCustomers">XXX</span> customers. Adjust your price accordingly!</p>
     </div>
 
     <label for="price">Set Your Lemonade Price ($):</label>
